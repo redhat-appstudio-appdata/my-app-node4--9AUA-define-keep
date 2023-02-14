@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-2cjj
+  namespace: eyuen-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:ee6f1c5cd34d2b9f23dee1b78a97c3838df43fa9562c3e1a8c0e57b5506868a7
+        name: my-nodejs
+        resources: {}
+status: {}
